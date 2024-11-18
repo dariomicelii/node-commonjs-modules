@@ -2,10 +2,13 @@ const namesObject = require("./names");
 const hobbiesObject = require("./hobbies");
 
 let yourProfile = () => {
+  let person = namesObject("Dario", "Miceli");
+  let hobbies = hobbiesObject("musica", "pittura", "scrittura");
+
   let profile = {
-    firstName: namesObject(firstName),
-    lastName: namesObject(lastName),
-    hobbies: hobbiesObject(hobby1, hobby2, hobby3),
+    firstName: person.firstName,
+    lastName: person.lastName,
+    hobbies: hobbies.hobbies,
   };
   return console.log(profile);
 };
