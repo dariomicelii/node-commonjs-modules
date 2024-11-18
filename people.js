@@ -3,9 +3,9 @@ const hobbiesObject = require("./hobbies");
 
 let yourProfile = () => {
   let profile = {
-    firsName: "dario",
-    lastName: "miceli",
-    hobbies: hobbiesObject,
+    firstName: namesObject(firstName),
+    lastName: namesObject(lastName),
+    hobbies: hobbiesObject(hobby1, hobby2, hobby3),
   };
   return console.log(profile);
 };
